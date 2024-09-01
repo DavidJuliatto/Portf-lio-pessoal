@@ -1,0 +1,137 @@
+/* Definindo as cores principais */
+:root {
+    --cor-primaria: #333333;      /* Preto */
+    --cor-secundaria: #666666;    /* Cinza médio */
+    --cor-terciaria: #cccccc;     /* Cinza claro */
+    --cor-fundo: #f4f4f4;         /* Cinza muito claro */
+    --cor-texto: #000000;         /* Preto para o texto */
+    --cor-branca: #ffffff;        /* Branco */
+}
+
+/* Estilização geral */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--cor-branca);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 25px;
+    background-color: var(--cor-secundaria);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: var(--cor-branca);
+    color: var(--cor-primaria);
+}
+
+main {
+    padding: 30px;
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: var(--cor-branca);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+main h1 {
+    color: var(--cor-primaria);
+    border-bottom: 3px solid var(--cor-secundaria);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+main p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+footer {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    text-align: center;
+    padding: 15px 0;
+    border-top: 3px solid var(--cor-secundaria);
+    margin-top: 30px;
+}
+
+/* Estilo para formulários */
+form {
+    background-color: var(--cor-branca);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--cor-primaria);
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 4px;
+    background-color: var(--cor-terciaria);
+    font-size: 16px;
+    color: var(--cor-texto);
+}
+
+form input[type="submit"] {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: var(--cor-secundaria);
+}
+
+/* Imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
